@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>table</title>
+	<style type="text/css">
+		table
+        {
+			border: 5px solid darkred;
+		}
+	</style>
+
+</head>
+<body>
+	<table border="3px">
+		<tr>
+			<th>First Nested Table</th>
+			<th>
+			<ul>
+				<li>VB.Net</li>
+				<li>Csharp</li>
+				<li>Asp.Net</li>
+			</ul>
+		</th>
+		</tr>
+		<tr>
+			<th><a href="">About</a></th>
+			<th><img src="{% static 'images/firefox.jpg' %}" width="500px" height="500px"></th>
+		</tr>
+	</table>
+
+</body>
+</html>

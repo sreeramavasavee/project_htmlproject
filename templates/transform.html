@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>transform</title>
+	<style>
+		div{
+			width: 300px;
+			height: 300px;
+			margin: 100px auto;
+			background-color: orange;
+			border: 3px solid orange;
+			position: relative;
+			transition: all 1s linear 0s;
+			overflow: hidden;
+
+		}
+		div>#wrapper:hover
+		{
+			cursor: pointer;
+			transform: translateX(100%);
+		}
+		div>img
+		{
+			width: inherit;
+			height: inherit;
+		}
+		div>#wrapper
+		{
+			background-color: blue;
+			background-color: rgba(255, 161, 66, 0.8);
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			margin: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="{% static 'images/krishna2.png' %}">
+		<div id="wrapper"></div>
+	</div>
+
+</body>
+</html>
